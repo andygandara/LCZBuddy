@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JetBrainsMono-Bold.ttf">
+            <string>JetBrainsMono-Bold</string>
+        </array>
+        <array key="JetBrainsMono-Regular.ttf">
+            <string>JetBrainsMono-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="86" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="LCZBuddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flk-FM-EIR">
+                        <rect key="frame" x="16" y="27" width="32" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9m-jL-a2Y">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <fontDescription key="fontDescription" name="JetBrainsMono-Bold" family="JetBrains Mono" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="0Dm-ed-RFj"/>
+                            <constraint firstItem="B9m-jL-a2Y" firstAttribute="leading" secondItem="flk-FM-EIR" secondAttribute="leading" id="aLV-uh-W90"/>
+                            <constraint firstAttribute="height" constant="32" id="dmY-k4-NQe"/>
+                            <constraint firstAttribute="bottom" secondItem="B9m-jL-a2Y" secondAttribute="bottom" id="ses-Ov-7JO"/>
+                            <constraint firstAttribute="trailing" secondItem="B9m-jL-a2Y" secondAttribute="trailing" id="uf0-Pf-Nm8"/>
+                            <constraint firstItem="B9m-jL-a2Y" firstAttribute="top" secondItem="flk-FM-EIR" secondAttribute="top" id="vo4-Ov-izh"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tSL-8O-Pgg">
+                        <rect key="frame" x="60" y="12" width="225" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tempe, AZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7A-WX-cAD">
+                                <rect key="frame" x="0.0" y="0.0" width="225" height="27"/>
+                                <fontDescription key="fontDescription" name="JetBrainsMono-Bold" family="JetBrains Mono" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="-31.234, 126.902" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-Ss-Wd2">
+                                <rect key="frame" x="0.0" y="27" width="225" height="17.5"/>
+                                <fontDescription key="fontDescription" name="JetBrainsMono-Regular" family="JetBrains Mono" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April 13, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOf-VW-kFc">
+                                <rect key="frame" x="0.0" y="44.5" width="225" height="17.5"/>
+                                <fontDescription key="fontDescription" name="JetBrainsMono-Regular" family="JetBrains Mono" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tSL-8O-Pgg" firstAttribute="leading" secondItem="flk-FM-EIR" secondAttribute="trailing" constant="12" id="84M-UZ-zEN"/>
+                    <constraint firstItem="flk-FM-EIR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KTM-6B-jM4"/>
+                    <constraint firstAttribute="bottom" secondItem="tSL-8O-Pgg" secondAttribute="bottom" constant="12" id="Ywu-nB-Xzw"/>
+                    <constraint firstAttribute="trailing" secondItem="tSL-8O-Pgg" secondAttribute="trailing" constant="8" id="qgP-u0-xfj"/>
+                    <constraint firstItem="flk-FM-EIR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tv8-xB-Tfa"/>
+                    <constraint firstItem="tSL-8O-Pgg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="urx-Bn-WCb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cityStateLabel" destination="K7A-WX-cAD" id="4qw-Ok-24x"/>
+                <outlet property="coordinateLabel" destination="Bm3-Ss-Wd2" id="GVj-KE-7oO"/>
+                <outlet property="dateTimeLabel" destination="aOf-VW-kFc" id="bzd-b8-8YT"/>
+                <outlet property="lczTypeBgView" destination="flk-FM-EIR" id="r2u-u1-Y5L"/>
+                <outlet property="lczTypeLabel" destination="B9m-jL-a2Y" id="m2T-ub-XSX"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="143.30357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

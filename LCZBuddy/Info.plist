@@ -60,5 +60,26 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location data is used to map LCZ locations.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location data is used to map LCZ locations.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera is used to add photos of area.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photo library is used to add photos of area.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>JetBrainsMono-Regular.ttf</string>
+		<string>JetBrainsMono-Medium.ttf</string>
+		<string>JetBrainsMono-Medium-Italic.ttf</string>
+		<string>JetBrainsMono-Italic.ttf</string>
+		<string>JetBrainsMono-ExtraBold.ttf</string>
+		<string>JetBrainsMono-ExtraBold-Italic.ttf</string>
+		<string>JetBrainsMono-Bold.ttf</string>
+		<string>JetBrainsMono-Bold-Italic.ttf</string>
+	</array>
 </dict>
 </plist>

@@ -7,25 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8174F33244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174F31244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift */; };
+		B8174F34244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8174F32244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.xib */; };
+		B81902E52448484500FFE5DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81902E42448484500FFE5DE /* DetailViewController.swift */; };
+		B81A155B24554F4B00C48A47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B81A155A24554F4B00C48A47 /* GoogleService-Info.plist */; };
+		B85E7BF82442751900B8CD4F /* LCZModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E7BF72442751900B8CD4F /* LCZModel.swift */; };
+		B85E7C0024427C6300B8CD4F /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B85E7BFE24427C6300B8CD4F /* HomeTableViewCell.xib */; };
+		B88AC0CB244452C0007460E0 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0CA244452C0007460E0 /* HomeTableViewCell.swift */; };
+		B88AC0CD24445318007460E0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0CC24445318007460E0 /* MapViewController.swift */; };
+		B88AC0D02444554B007460E0 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0CF2444554B007460E0 /* AddViewController.swift */; };
+		B88AC0D32444595C007460E0 /* LCZService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0D22444595C007460E0 /* LCZService.swift */; };
+		B88AC0D524446EFA007460E0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0D424446EFA007460E0 /* Date+Extensions.swift */; };
+		B88AC0D7244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0D6244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift */; };
+		B88AC0D924447513007460E0 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0D824447513007460E0 /* Double+Extensions.swift */; };
+		B8AD52DB244AC06A007B3E96 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD52D9244AC06A007B3E96 /* PhotoCollectionViewCell.swift */; };
+		B8AD52DC244AC06A007B3E96 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52DA244AC06A007B3E96 /* PhotoCollectionViewCell.xib */; };
+		B8AD52E6244BC225007B3E96 /* JetBrainsMono-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52DE244BC225007B3E96 /* JetBrainsMono-ExtraBold.ttf */; };
+		B8AD52E7244BC225007B3E96 /* JetBrainsMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52DF244BC225007B3E96 /* JetBrainsMono-Medium.ttf */; };
+		B8AD52E8244BC225007B3E96 /* JetBrainsMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52E0244BC225007B3E96 /* JetBrainsMono-Bold.ttf */; };
+		B8AD52E9244BC225007B3E96 /* JetBrainsMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52E1244BC225007B3E96 /* JetBrainsMono-Italic.ttf */; };
+		B8AD52EA244BC225007B3E96 /* JetBrainsMono-Medium-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52E2244BC225007B3E96 /* JetBrainsMono-Medium-Italic.ttf */; };
+		B8AD52EB244BC225007B3E96 /* JetBrainsMono-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52E3244BC225007B3E96 /* JetBrainsMono-Bold-Italic.ttf */; };
+		B8AD52EC244BC225007B3E96 /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52E4244BC225007B3E96 /* JetBrainsMono-Regular.ttf */; };
+		B8AD52ED244BC225007B3E96 /* JetBrainsMono-ExtraBold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52E5244BC225007B3E96 /* JetBrainsMono-ExtraBold-Italic.ttf */; };
+		B8AEF1D12442841E00DA5953 /* DataBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEF1D02442841E00DA5953 /* DataBindable.swift */; };
 		B8F0516E24347717007098F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0516D24347717007098F5 /* AppDelegate.swift */; };
 		B8F0517024347717007098F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0516F24347717007098F5 /* SceneDelegate.swift */; };
-		B8F0517224347717007098F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0517124347717007098F5 /* ViewController.swift */; };
+		B8F0517224347717007098F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0517124347717007098F5 /* HomeViewController.swift */; };
 		B8F0517524347717007098F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F0517324347717007098F5 /* Main.storyboard */; };
 		B8F0517824347717007098F5 /* LCZBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8F0517624347717007098F5 /* LCZBuddy.xcdatamodeld */; };
 		B8F0517A2434771A007098F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8F051792434771A007098F5 /* Assets.xcassets */; };
 		B8F0517D2434771A007098F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F0517B2434771A007098F5 /* LaunchScreen.storyboard */; };
+		F92AFF8C12BF245C9D826255 /* Pods_LCZBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED63A249CB3813BF3950BC9C /* Pods_LCZBuddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78262228F9B807A35E6FFDD7 /* Pods-LCZBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZBuddy.release.xcconfig"; path = "Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		86ED55414C3E4601C483414B /* Pods-LCZBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZBuddy.debug.xcconfig"; path = "Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		B8174F31244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		B8174F32244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		B81902E42448484500FFE5DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B81A155A24554F4B00C48A47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B85E7BF72442751900B8CD4F /* LCZModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCZModel.swift; sourceTree = "<group>"; };
+		B85E7BFE24427C6300B8CD4F /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		B88AC0CA244452C0007460E0 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		B88AC0CC24445318007460E0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B88AC0CF2444554B007460E0 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		B88AC0D22444595C007460E0 /* LCZService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCZService.swift; sourceTree = "<group>"; };
+		B88AC0D424446EFA007460E0 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		B88AC0D6244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extensions.swift"; sourceTree = "<group>"; };
+		B88AC0D824447513007460E0 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		B8AD52D9244AC06A007B3E96 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		B8AD52DA244AC06A007B3E96 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		B8AD52DE244BC225007B3E96 /* JetBrainsMono-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-ExtraBold.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B8AD52DF244BC225007B3E96 /* JetBrainsMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-Medium.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Medium.ttf"; sourceTree = "<group>"; };
+		B8AD52E0244BC225007B3E96 /* JetBrainsMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-Bold.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Bold.ttf"; sourceTree = "<group>"; };
+		B8AD52E1244BC225007B3E96 /* JetBrainsMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-Italic.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Italic.ttf"; sourceTree = "<group>"; };
+		B8AD52E2244BC225007B3E96 /* JetBrainsMono-Medium-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-Medium-Italic.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Medium-Italic.ttf"; sourceTree = "<group>"; };
+		B8AD52E3244BC225007B3E96 /* JetBrainsMono-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-Bold-Italic.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		B8AD52E4244BC225007B3E96 /* JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-Regular.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; };
+		B8AD52E5244BC225007B3E96 /* JetBrainsMono-ExtraBold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-ExtraBold-Italic.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-ExtraBold-Italic.ttf"; sourceTree = "<group>"; };
+		B8AEF1D02442841E00DA5953 /* DataBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBindable.swift; sourceTree = "<group>"; };
 		B8F0516A24347717007098F5 /* LCZBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCZBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F0516D24347717007098F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8F0516F24347717007098F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B8F0517124347717007098F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8F0517124347717007098F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B8F0517424347717007098F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8F0517724347717007098F5 /* LCZBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCZBuddy.xcdatamodel; sourceTree = "<group>"; };
 		B8F051792434771A007098F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8F0517C2434771A007098F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8F0517E2434771A007098F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED63A249CB3813BF3950BC9C /* Pods_LCZBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCZBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +85,133 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92AFF8C12BF245C9D826255 /* Pods_LCZBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B89503BCE40347A01B389CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86ED55414C3E4601C483414B /* Pods-LCZBuddy.debug.xcconfig */,
+				78262228F9B807A35E6FFDD7 /* Pods-LCZBuddy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F17AFED91551F0D4B88AF4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED63A249CB3813BF3950BC9C /* Pods_LCZBuddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8174F30244E67B70064EC14 /* EmptyPhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B8174F31244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift */,
+				B8174F32244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.xib */,
+			);
+			path = EmptyPhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B81902E32448482300FFE5DE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B81902E42448484500FFE5DE /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B85E7BFB24427C1700B8CD4F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B8F0517124347717007098F5 /* HomeViewController.swift */,
+				B85E7BFC24427C3B00B8CD4F /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B85E7BFC24427C3B00B8CD4F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B88AC0CA244452C0007460E0 /* HomeTableViewCell.swift */,
+				B85E7BFE24427C6300B8CD4F /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B88AC0C924445244007460E0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B88AC0CC24445318007460E0 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		B88AC0CE244454F6007460E0 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				B8174F30244E67B70064EC14 /* EmptyPhotoCollectionViewCell */,
+				B8AD52D8244AC053007B3E96 /* PhotoCollectionViewCell */,
+				B88AC0CF2444554B007460E0 /* AddViewController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		B88AC0D124445944007460E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B88AC0D22444595C007460E0 /* LCZService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B88AC0DA24447828007460E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B88AC0D424446EFA007460E0 /* Date+Extensions.swift */,
+				B88AC0D6244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift */,
+				B88AC0D824447513007460E0 /* Double+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B8AD52D8244AC053007B3E96 /* PhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B8AD52D9244AC06A007B3E96 /* PhotoCollectionViewCell.swift */,
+				B8AD52DA244AC06A007B3E96 /* PhotoCollectionViewCell.xib */,
+			);
+			path = PhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B8AD52DD244BC201007B3E96 /* JetBrainsMono */ = {
+			isa = PBXGroup;
+			children = (
+				B8AD52E3244BC225007B3E96 /* JetBrainsMono-Bold-Italic.ttf */,
+				B8AD52E0244BC225007B3E96 /* JetBrainsMono-Bold.ttf */,
+				B8AD52E5244BC225007B3E96 /* JetBrainsMono-ExtraBold-Italic.ttf */,
+				B8AD52DE244BC225007B3E96 /* JetBrainsMono-ExtraBold.ttf */,
+				B8AD52E1244BC225007B3E96 /* JetBrainsMono-Italic.ttf */,
+				B8AD52E2244BC225007B3E96 /* JetBrainsMono-Medium-Italic.ttf */,
+				B8AD52DF244BC225007B3E96 /* JetBrainsMono-Medium.ttf */,
+				B8AD52E4244BC225007B3E96 /* JetBrainsMono-Regular.ttf */,
+			);
+			path = JetBrainsMono;
+			sourceTree = "<group>";
+		};
 		B8F0516124347716007098F5 = {
 			isa = PBXGroup;
 			children = (
 				B8F0516C24347717007098F5 /* LCZBuddy */,
 				B8F0516B24347717007098F5 /* Products */,
+				0B89503BCE40347A01B389CF /* Pods */,
+				5F17AFED91551F0D4B88AF4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,12 +228,21 @@
 			children = (
 				B8F0516D24347717007098F5 /* AppDelegate.swift */,
 				B8F0516F24347717007098F5 /* SceneDelegate.swift */,
-				B8F0517124347717007098F5 /* ViewController.swift */,
-				B8F0517324347717007098F5 /* Main.storyboard */,
-				B8F051792434771A007098F5 /* Assets.xcassets */,
-				B8F0517B2434771A007098F5 /* LaunchScreen.storyboard */,
 				B8F0517E2434771A007098F5 /* Info.plist */,
+				B81A155A24554F4B00C48A47 /* GoogleService-Info.plist */,
+				B8F051792434771A007098F5 /* Assets.xcassets */,
 				B8F0517624347717007098F5 /* LCZBuddy.xcdatamodeld */,
+				B8F0517B2434771A007098F5 /* LaunchScreen.storyboard */,
+				B8F0517324347717007098F5 /* Main.storyboard */,
+				B88AC0CE244454F6007460E0 /* Add */,
+				B81902E32448482300FFE5DE /* Detail */,
+				B88AC0DA24447828007460E0 /* Extensions */,
+				B85E7BFB24427C1700B8CD4F /* Home */,
+				B88AC0C924445244007460E0 /* Map */,
+				B88AC0D124445944007460E0 /* Services */,
+				B85E7BF72442751900B8CD4F /* LCZModel.swift */,
+				B8AEF1D02442841E00DA5953 /* DataBindable.swift */,
+				B8AD52DD244BC201007B3E96 /* JetBrainsMono */,
 			);
 			path = LCZBuddy;
 			sourceTree = "<group>";
@@ -77,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8F051812434771A007098F5 /* Build configuration list for PBXNativeTarget "LCZBuddy" */;
 			buildPhases = (
+				46F7E738990A96688FBF8CCC /* [CP] Check Pods Manifest.lock */,
 				B8F0516624347717007098F5 /* Sources */,
 				B8F0516724347717007098F5 /* Frameworks */,
 				B8F0516824347717007098F5 /* Resources */,
+				84551E991B7A0CBA67610E43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,22 +307,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8AD52E9244BC225007B3E96 /* JetBrainsMono-Italic.ttf in Resources */,
+				B8AD52EB244BC225007B3E96 /* JetBrainsMono-Bold-Italic.ttf in Resources */,
+				B81A155B24554F4B00C48A47 /* GoogleService-Info.plist in Resources */,
+				B8174F34244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.xib in Resources */,
 				B8F0517D2434771A007098F5 /* LaunchScreen.storyboard in Resources */,
+				B85E7C0024427C6300B8CD4F /* HomeTableViewCell.xib in Resources */,
+				B8AD52ED244BC225007B3E96 /* JetBrainsMono-ExtraBold-Italic.ttf in Resources */,
+				B8AD52E6244BC225007B3E96 /* JetBrainsMono-ExtraBold.ttf in Resources */,
+				B8AD52EA244BC225007B3E96 /* JetBrainsMono-Medium-Italic.ttf in Resources */,
+				B8AD52E8244BC225007B3E96 /* JetBrainsMono-Bold.ttf in Resources */,
+				B8AD52DC244AC06A007B3E96 /* PhotoCollectionViewCell.xib in Resources */,
+				B8AD52E7244BC225007B3E96 /* JetBrainsMono-Medium.ttf in Resources */,
 				B8F0517A2434771A007098F5 /* Assets.xcassets in Resources */,
+				B8AD52EC244BC225007B3E96 /* JetBrainsMono-Regular.ttf in Resources */,
 				B8F0517524347717007098F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46F7E738990A96688FBF8CCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LCZBuddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84551E991B7A0CBA67610E43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8F0516624347717007098F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8F0517224347717007098F5 /* ViewController.swift in Sources */,
+				B88AC0D02444554B007460E0 /* AddViewController.swift in Sources */,
+				B8174F33244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift in Sources */,
+				B8AEF1D12442841E00DA5953 /* DataBindable.swift in Sources */,
+				B88AC0D924447513007460E0 /* Double+Extensions.swift in Sources */,
+				B8F0517224347717007098F5 /* HomeViewController.swift in Sources */,
+				B85E7BF82442751900B8CD4F /* LCZModel.swift in Sources */,
 				B8F0516E24347717007098F5 /* AppDelegate.swift in Sources */,
+				B88AC0D524446EFA007460E0 /* Date+Extensions.swift in Sources */,
+				B88AC0CD24445318007460E0 /* MapViewController.swift in Sources */,
+				B8AD52DB244AC06A007B3E96 /* PhotoCollectionViewCell.swift in Sources */,
+				B88AC0D7244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
+				B88AC0CB244452C0007460E0 /* HomeTableViewCell.swift in Sources */,
 				B8F0517824347717007098F5 /* LCZBuddy.xcdatamodeld in Sources */,
+				B81902E52448484500FFE5DE /* DetailViewController.swift in Sources */,
+				B88AC0D32444595C007460E0 /* LCZService.swift in Sources */,
 				B8F0517024347717007098F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,11 +531,13 @@
 		};
 		B8F051822434771A007098F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86ED55414C3E4601C483414B /* Pods-LCZBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTPP3D6J7U;
 				INFOPLIST_FILE = LCZBuddy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +551,13 @@
 		};
 		B8F051832434771A007098F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78262228F9B807A35E6FFDD7 /* Pods-LCZBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTPP3D6J7U;
 				INFOPLIST_FILE = LCZBuddy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
