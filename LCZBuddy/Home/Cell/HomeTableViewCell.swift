@@ -31,7 +31,7 @@ public class HomeTableViewCell: UITableViewCell {
 }
 
 extension HomeTableViewCell: DataBindable {
-    public func bind(data: LCZModel?) {
+    public func bind(data: LCZ?) {
         guard let data = data else { return }
         
         lczTypeBgView.backgroundColor = data.lczType.color

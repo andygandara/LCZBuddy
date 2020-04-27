@@ -8,5 +8,7 @@ target 'LCZBuddy' do
   # Pods for LCZBuddy
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Storage'
 
 end

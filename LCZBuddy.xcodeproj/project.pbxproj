@@ -3,15 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C42BBF663E81BD47FDF8596 /* Pods_LCZBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F944E1B40703E8C4D360FE13 /* Pods_LCZBuddy.framework */; };
 		B8174F33244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174F31244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift */; };
 		B8174F34244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8174F32244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.xib */; };
 		B81902E52448484500FFE5DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81902E42448484500FFE5DE /* DetailViewController.swift */; };
 		B81A155B24554F4B00C48A47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B81A155A24554F4B00C48A47 /* GoogleService-Info.plist */; };
-		B85E7BF82442751900B8CD4F /* LCZModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E7BF72442751900B8CD4F /* LCZModel.swift */; };
+		B85DC36E245656BC005D3BC7 /* GeoPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85DC36D245656BC005D3BC7 /* GeoPoint+Extensions.swift */; };
+		B85E7BF82442751900B8CD4F /* LCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E7BF72442751900B8CD4F /* LCZ.swift */; };
 		B85E7C0024427C6300B8CD4F /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B85E7BFE24427C6300B8CD4F /* HomeTableViewCell.xib */; };
 		B88AC0CB244452C0007460E0 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0CA244452C0007460E0 /* HomeTableViewCell.swift */; };
 		B88AC0CD24445318007460E0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0CC24445318007460E0 /* MapViewController.swift */; };
@@ -38,17 +40,16 @@
 		B8F0517824347717007098F5 /* LCZBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8F0517624347717007098F5 /* LCZBuddy.xcdatamodeld */; };
 		B8F0517A2434771A007098F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8F051792434771A007098F5 /* Assets.xcassets */; };
 		B8F0517D2434771A007098F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F0517B2434771A007098F5 /* LaunchScreen.storyboard */; };
-		F92AFF8C12BF245C9D826255 /* Pods_LCZBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED63A249CB3813BF3950BC9C /* Pods_LCZBuddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		78262228F9B807A35E6FFDD7 /* Pods-LCZBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZBuddy.release.xcconfig"; path = "Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy.release.xcconfig"; sourceTree = "<group>"; };
-		86ED55414C3E4601C483414B /* Pods-LCZBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZBuddy.debug.xcconfig"; path = "Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		32FA566FD2BBBD994EA8B925 /* Pods-LCZBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZBuddy.debug.xcconfig"; path = "Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		B8174F31244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		B8174F32244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		B81902E42448484500FFE5DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B81A155A24554F4B00C48A47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B85E7BF72442751900B8CD4F /* LCZModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCZModel.swift; sourceTree = "<group>"; };
+		B85DC36D245656BC005D3BC7 /* GeoPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeoPoint+Extensions.swift"; sourceTree = "<group>"; };
+		B85E7BF72442751900B8CD4F /* LCZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCZ.swift; sourceTree = "<group>"; };
 		B85E7BFE24427C6300B8CD4F /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		B88AC0CA244452C0007460E0 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		B88AC0CC24445318007460E0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +78,8 @@
 		B8F051792434771A007098F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8F0517C2434771A007098F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8F0517E2434771A007098F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED63A249CB3813BF3950BC9C /* Pods_LCZBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCZBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBADC2D61FA3A3083803179 /* Pods-LCZBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZBuddy.release.xcconfig"; path = "Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		F944E1B40703E8C4D360FE13 /* Pods_LCZBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCZBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92AFF8C12BF245C9D826255 /* Pods_LCZBuddy.framework in Frameworks */,
+				6C42BBF663E81BD47FDF8596 /* Pods_LCZBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,19 +97,35 @@
 		0B89503BCE40347A01B389CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				86ED55414C3E4601C483414B /* Pods-LCZBuddy.debug.xcconfig */,
-				78262228F9B807A35E6FFDD7 /* Pods-LCZBuddy.release.xcconfig */,
+				32FA566FD2BBBD994EA8B925 /* Pods-LCZBuddy.debug.xcconfig */,
+				CCBADC2D61FA3A3083803179 /* Pods-LCZBuddy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5F17AFED91551F0D4B88AF4B /* Frameworks */ = {
+		A263243D42FA68A0CF24AFA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED63A249CB3813BF3950BC9C /* Pods_LCZBuddy.framework */,
+				F944E1B40703E8C4D360FE13 /* Pods_LCZBuddy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8118988245690350020428F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B85E7BF72442751900B8CD4F /* LCZ.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B81189892456904D0020428F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B8AEF1D02442841E00DA5953 /* DataBindable.swift */,
+				B8AD52DD244BC201007B3E96 /* JetBrainsMono */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		B8174F30244E67B70064EC14 /* EmptyPhotoCollectionViewCell */ = {
@@ -163,12 +181,12 @@
 			path = Add;
 			sourceTree = "<group>";
 		};
-		B88AC0D124445944007460E0 /* Services */ = {
+		B88AC0D124445944007460E0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				B88AC0D22444595C007460E0 /* LCZService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		B88AC0DA24447828007460E0 /* Extensions */ = {
@@ -177,6 +195,7 @@
 				B88AC0D424446EFA007460E0 /* Date+Extensions.swift */,
 				B88AC0D6244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift */,
 				B88AC0D824447513007460E0 /* Double+Extensions.swift */,
+				B85DC36D245656BC005D3BC7 /* GeoPoint+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,7 +230,7 @@
 				B8F0516C24347717007098F5 /* LCZBuddy */,
 				B8F0516B24347717007098F5 /* Products */,
 				0B89503BCE40347A01B389CF /* Pods */,
-				5F17AFED91551F0D4B88AF4B /* Frameworks */,
+				A263243D42FA68A0CF24AFA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,10 +258,9 @@
 				B88AC0DA24447828007460E0 /* Extensions */,
 				B85E7BFB24427C1700B8CD4F /* Home */,
 				B88AC0C924445244007460E0 /* Map */,
-				B88AC0D124445944007460E0 /* Services */,
-				B85E7BF72442751900B8CD4F /* LCZModel.swift */,
-				B8AEF1D02442841E00DA5953 /* DataBindable.swift */,
-				B8AD52DD244BC201007B3E96 /* JetBrainsMono */,
+				B8118988245690350020428F /* Model */,
+				B88AC0D124445944007460E0 /* Service */,
+				B81189892456904D0020428F /* Utilities */,
 			);
 			path = LCZBuddy;
 			sourceTree = "<group>";
@@ -254,11 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8F051812434771A007098F5 /* Build configuration list for PBXNativeTarget "LCZBuddy" */;
 			buildPhases = (
-				46F7E738990A96688FBF8CCC /* [CP] Check Pods Manifest.lock */,
+				562B5A8F03676288FB32BF05 /* [CP] Check Pods Manifest.lock */,
 				B8F0516624347717007098F5 /* Sources */,
 				B8F0516724347717007098F5 /* Frameworks */,
 				B8F0516824347717007098F5 /* Resources */,
-				84551E991B7A0CBA67610E43 /* [CP] Embed Pods Frameworks */,
+				17C765A2CFEC62F9AEC7050A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,7 +346,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		46F7E738990A96688FBF8CCC /* [CP] Check Pods Manifest.lock */ = {
+		17C765A2CFEC62F9AEC7050A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		562B5A8F03676288FB32BF05 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,23 +385,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		84551E991B7A0CBA67610E43 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,7 +397,7 @@
 				B8AEF1D12442841E00DA5953 /* DataBindable.swift in Sources */,
 				B88AC0D924447513007460E0 /* Double+Extensions.swift in Sources */,
 				B8F0517224347717007098F5 /* HomeViewController.swift in Sources */,
-				B85E7BF82442751900B8CD4F /* LCZModel.swift in Sources */,
+				B85E7BF82442751900B8CD4F /* LCZ.swift in Sources */,
 				B8F0516E24347717007098F5 /* AppDelegate.swift in Sources */,
 				B88AC0D524446EFA007460E0 /* Date+Extensions.swift in Sources */,
 				B88AC0CD24445318007460E0 /* MapViewController.swift in Sources */,
@@ -387,6 +405,7 @@
 				B88AC0D7244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
 				B88AC0CB244452C0007460E0 /* HomeTableViewCell.swift in Sources */,
 				B8F0517824347717007098F5 /* LCZBuddy.xcdatamodeld in Sources */,
+				B85DC36E245656BC005D3BC7 /* GeoPoint+Extensions.swift in Sources */,
 				B81902E52448484500FFE5DE /* DetailViewController.swift in Sources */,
 				B88AC0D32444595C007460E0 /* LCZService.swift in Sources */,
 				B8F0517024347717007098F5 /* SceneDelegate.swift in Sources */,
@@ -531,7 +550,7 @@
 		};
 		B8F051822434771A007098F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86ED55414C3E4601C483414B /* Pods-LCZBuddy.debug.xcconfig */;
+			baseConfigurationReference = 32FA566FD2BBBD994EA8B925 /* Pods-LCZBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,7 +570,7 @@
 		};
 		B8F051832434771A007098F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78262228F9B807A35E6FFDD7 /* Pods-LCZBuddy.release.xcconfig */;
+			baseConfigurationReference = CCBADC2D61FA3A3083803179 /* Pods-LCZBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

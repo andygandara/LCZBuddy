@@ -12,7 +12,7 @@ import MapKit
 class MapViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     
-    var lczs: [LCZModel] = []
+    var lczs: [LCZ] = []
     
     let lczService = LCZService()
     
@@ -22,9 +22,14 @@ class MapViewController: UIViewController {
     }
     
     func setPlacemarks() {
-        lczService.fetchLCZs().forEach {
-            let placemark = MKPlacemark(coordinate: $0.location)
-            mapView.addAnnotation(placemark)
+        lczService.fetch { lczs in
+            guard let lczs = lczs else { return }
+            lczs.forEach {
+                let coordinate = CLLocationCoordinate2D(latitude: $0.location.latitude,
+                                                        longitude: $0.location.longitude)
+                let placemark = MKPlacemark(coordinate: coordinate)
+                self.mapView.addAnnotation(placemark)
+            }
         }
     }
     

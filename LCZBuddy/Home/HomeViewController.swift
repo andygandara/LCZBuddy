@@ -13,9 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var tableView: UITableView!
     
-    var lczRecords: [LCZModel] = [] {
-        didSet { tableView.reloadData() }
-    }
+    var lczs: [LCZ] = []
     
     let lczService = LCZService()
 
@@ -23,6 +21,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         fetchLCZRecords()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(didAddLCZ),
+                                               name: NSNotification.Name(rawValue: "didAddLCZ"),
+                                               object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,7 +38,7 @@ class HomeViewController: UIViewController {
         case "HomeToDetail":
             let viewController = segue.destination as! DetailViewController
             guard let selectedIndexPathRow = tableView.indexPathForSelectedRow?.row else { return }
-            let selectedModel = lczRecords[selectedIndexPathRow]
+            let selectedModel = lczs[selectedIndexPathRow]
             viewController.model = selectedModel
         default: break
         }
@@ -48,15 +50,23 @@ class HomeViewController: UIViewController {
     
     @IBAction func segmentedControlChanged(_ sender: Any) {
         switch segmentedControl.selectedSegmentIndex {
-        case 0: lczRecords.sort { $0.lczType.rawValue < $1.lczType.rawValue }
-        case 1: lczRecords.sort { $0.dateTime < $1.dateTime }
+        case 0: lczs.sort { $0.lczType.rawValue < $1.lczType.rawValue }
+        case 1: lczs.sort { $0.dateTime < $1.dateTime }
         default: break
         }
         tableView.reloadData()
     }
     
+    @objc private func didAddLCZ(notification: NSNotification) {
+        fetchLCZRecords()
+    }
+    
     func fetchLCZRecords() {
-        lczRecords = lczService.fetchLCZs()
+        lczService.fetch { lczs in
+            guard let lczs = lczs else { return }
+            self.lczs = lczs
+            self.tableView.reloadData()
+        }
     }
     
     func setupTableView() {
@@ -68,12 +78,12 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lczRecords.count
+        return lczs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
-        cell.bind(data: lczRecords[indexPath.row])
+        cell.bind(data: lczs[indexPath.row])
         return cell
     }
     
