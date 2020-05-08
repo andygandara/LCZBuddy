@@ -40,6 +40,7 @@ class AddViewController: UIViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
         setupCollectionView()
         setupLabels()
+        setupTapToDismiss()
     }
 
     @IBAction func cancelButtonPressed(_ sender: Any) {
@@ -56,6 +57,7 @@ class AddViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     @IBAction func helpButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "AddToInfo", sender: self)
     }
     
     @IBAction func addPhotoButtonPressed(_ sender: Any) {
@@ -89,7 +91,7 @@ class AddViewController: UIViewController, UINavigationControllerDelegate {
                 self?.doneButton.isEnabled = false
                 return
             }
-            guard let imageData = self?.images.compactMap({ $0.pngData() }) else { return }
+            guard let imageData = self?.images.compactMap({ $0.jpegData(compressionQuality: 0.75) }) else { return }
             self?.lczService.add(lcz: model, images: imageData) { success in
                 if success {
                     self?.dismiss(animated: true)
@@ -99,6 +101,15 @@ class AddViewController: UIViewController, UINavigationControllerDelegate {
             }
             self?.doneButton.isEnabled = true
         }
+    }
+    
+    func setupTapToDismiss() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        resignFirstResponder()
     }
     
     func setupCollectionView() {

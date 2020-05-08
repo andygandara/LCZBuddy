@@ -13,17 +13,19 @@ class HomeViewController: UIViewController {
     @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var tableView: UITableView!
     
-    var lczs: [LCZ] = []
+    var refreshControl = UIRefreshControl()
     
+    var lczs: [LCZ] = []
     let lczService = LCZService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        setupRefreshControl()
         fetchLCZRecords()
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(didAddLCZ),
-                                               name: NSNotification.Name(rawValue: "didAddLCZ"),
+                                               name: Notification.Name(rawValue: "didAddLCZ"),
                                                object: nil)
     }
     
@@ -51,7 +53,7 @@ class HomeViewController: UIViewController {
     @IBAction func segmentedControlChanged(_ sender: Any) {
         switch segmentedControl.selectedSegmentIndex {
         case 0: lczs.sort { $0.lczType.rawValue < $1.lczType.rawValue }
-        case 1: lczs.sort { $0.dateTime < $1.dateTime }
+        case 1: lczs.sort { $0.dateTime > $1.dateTime }
         default: break
         }
         tableView.reloadData()
@@ -62,10 +64,14 @@ class HomeViewController: UIViewController {
     }
     
     func fetchLCZRecords() {
-        lczService.fetch { lczs in
+        refreshControl.beginRefreshing()
+        lczService.fetchLCZs { lczs in
             guard let lczs = lczs else { return }
-            self.lczs = lczs
+            self.lczs = lczs.sorted { self.segmentedControl.selectedSegmentIndex == 0
+                ? ($0.lczType.rawValue < $1.lczType.rawValue)
+                : ($0.dateTime > $1.dateTime) }
             self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
         }
     }
     
@@ -73,6 +79,16 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
+    }
+    
+    func setupRefreshControl() {
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        fetchLCZRecords()
     }
 }
 

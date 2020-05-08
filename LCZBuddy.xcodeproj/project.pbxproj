@@ -20,7 +20,6 @@
 		B88AC0D02444554B007460E0 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0CF2444554B007460E0 /* AddViewController.swift */; };
 		B88AC0D32444595C007460E0 /* LCZService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0D22444595C007460E0 /* LCZService.swift */; };
 		B88AC0D524446EFA007460E0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0D424446EFA007460E0 /* Date+Extensions.swift */; };
-		B88AC0D7244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0D6244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift */; };
 		B88AC0D924447513007460E0 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88AC0D824447513007460E0 /* Double+Extensions.swift */; };
 		B8AD52DB244AC06A007B3E96 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD52D9244AC06A007B3E96 /* PhotoCollectionViewCell.swift */; };
 		B8AD52DC244AC06A007B3E96 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52DA244AC06A007B3E96 /* PhotoCollectionViewCell.xib */; };
@@ -33,6 +32,10 @@
 		B8AD52EC244BC225007B3E96 /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52E4244BC225007B3E96 /* JetBrainsMono-Regular.ttf */; };
 		B8AD52ED244BC225007B3E96 /* JetBrainsMono-ExtraBold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8AD52E5244BC225007B3E96 /* JetBrainsMono-ExtraBold-Italic.ttf */; };
 		B8AEF1D12442841E00DA5953 /* DataBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEF1D02442841E00DA5953 /* DataBindable.swift */; };
+		B8D17F1424580B5D000443CA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D17F1324580B5D000443CA /* InfoViewController.swift */; };
+		B8D17F1624580BF5000443CA /* HelpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D17F1524580BF5000443CA /* HelpService.swift */; };
+		B8D17F1A24580DCE000443CA /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D17F1824580DCE000443CA /* InfoTableViewCell.swift */; };
+		B8D17F1B24580DCE000443CA /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8D17F1924580DCE000443CA /* InfoTableViewCell.xib */; };
 		B8F0516E24347717007098F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0516D24347717007098F5 /* AppDelegate.swift */; };
 		B8F0517024347717007098F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0516F24347717007098F5 /* SceneDelegate.swift */; };
 		B8F0517224347717007098F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0517124347717007098F5 /* HomeViewController.swift */; };
@@ -40,6 +43,12 @@
 		B8F0517824347717007098F5 /* LCZBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8F0517624347717007098F5 /* LCZBuddy.xcdatamodeld */; };
 		B8F0517A2434771A007098F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8F051792434771A007098F5 /* Assets.xcassets */; };
 		B8F0517D2434771A007098F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F0517B2434771A007098F5 /* LaunchScreen.storyboard */; };
+		B8F2E77D2456C32F00B51A42 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F2E77C2456C32F00B51A42 /* UIView+Extensions.swift */; };
+		B8F2E7812456C40600B51A42 /* PinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8F2E7802456C40600B51A42 /* PinView.xib */; };
+		B8F2E7832456CD7500B51A42 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F2E7822456CD7500B51A42 /* PinView.swift */; };
+		B8F2E7852456CDE400B51A42 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F2E7842456CDE400B51A42 /* NibLoadable.swift */; };
+		B8F2E7872456CE4100B51A42 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F2E7862456CE4100B51A42 /* Reusable.swift */; };
+		B8F2E7892456D89A00B51A42 /* LCZDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F2E7882456D89A00B51A42 /* LCZDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +65,6 @@
 		B88AC0CF2444554B007460E0 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		B88AC0D22444595C007460E0 /* LCZService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCZService.swift; sourceTree = "<group>"; };
 		B88AC0D424446EFA007460E0 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
-		B88AC0D6244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extensions.swift"; sourceTree = "<group>"; };
 		B88AC0D824447513007460E0 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		B8AD52D9244AC06A007B3E96 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		B8AD52DA244AC06A007B3E96 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -69,6 +77,10 @@
 		B8AD52E4244BC225007B3E96 /* JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-Regular.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; };
 		B8AD52E5244BC225007B3E96 /* JetBrainsMono-ExtraBold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JetBrainsMono-ExtraBold-Italic.ttf"; path = "../../../../../../../Downloads/JetBrainsMono-1.0.3/ttf/JetBrainsMono-ExtraBold-Italic.ttf"; sourceTree = "<group>"; };
 		B8AEF1D02442841E00DA5953 /* DataBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBindable.swift; sourceTree = "<group>"; };
+		B8D17F1324580B5D000443CA /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B8D17F1524580BF5000443CA /* HelpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpService.swift; sourceTree = "<group>"; };
+		B8D17F1824580DCE000443CA /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		B8D17F1924580DCE000443CA /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		B8F0516A24347717007098F5 /* LCZBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCZBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F0516D24347717007098F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8F0516F24347717007098F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +90,12 @@
 		B8F051792434771A007098F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8F0517C2434771A007098F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8F0517E2434771A007098F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8F2E77C2456C32F00B51A42 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		B8F2E7802456C40600B51A42 /* PinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinView.xib; sourceTree = "<group>"; };
+		B8F2E7822456CD7500B51A42 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		B8F2E7842456CDE400B51A42 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		B8F2E7862456CE4100B51A42 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		B8F2E7882456D89A00B51A42 /* LCZDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCZDescription.swift; sourceTree = "<group>"; };
 		CCBADC2D61FA3A3083803179 /* Pods-LCZBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZBuddy.release.xcconfig"; path = "Target Support Files/Pods-LCZBuddy/Pods-LCZBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		F944E1B40703E8C4D360FE13 /* Pods_LCZBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCZBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B85E7BF72442751900B8CD4F /* LCZ.swift */,
+				B8F2E7882456D89A00B51A42 /* LCZDescription.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,7 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				B8AEF1D02442841E00DA5953 /* DataBindable.swift */,
-				B8AD52DD244BC201007B3E96 /* JetBrainsMono */,
+				B8F2E7842456CDE400B51A42 /* NibLoadable.swift */,
+				B8F2E7862456CE4100B51A42 /* Reusable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -167,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				B88AC0CC24445318007460E0 /* MapViewController.swift */,
+				B8F2E7802456C40600B51A42 /* PinView.xib */,
+				B8F2E7822456CD7500B51A42 /* PinView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -185,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				B88AC0D22444595C007460E0 /* LCZService.swift */,
+				B8D17F1524580BF5000443CA /* HelpService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -193,9 +216,9 @@
 			isa = PBXGroup;
 			children = (
 				B88AC0D424446EFA007460E0 /* Date+Extensions.swift */,
-				B88AC0D6244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift */,
 				B88AC0D824447513007460E0 /* Double+Extensions.swift */,
 				B85DC36D245656BC005D3BC7 /* GeoPoint+Extensions.swift */,
+				B8F2E77C2456C32F00B51A42 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,6 +245,24 @@
 				B8AD52E4244BC225007B3E96 /* JetBrainsMono-Regular.ttf */,
 			);
 			path = JetBrainsMono;
+			sourceTree = "<group>";
+		};
+		B8D17F1224580B2F000443CA /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				B8D17F1324580B5D000443CA /* InfoViewController.swift */,
+				B8D17F1724580DBA000443CA /* Cell */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		B8D17F1724580DBA000443CA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B8D17F1824580DCE000443CA /* InfoTableViewCell.swift */,
+				B8D17F1924580DCE000443CA /* InfoTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		B8F0516124347716007098F5 = {
@@ -257,10 +298,12 @@
 				B81902E32448482300FFE5DE /* Detail */,
 				B88AC0DA24447828007460E0 /* Extensions */,
 				B85E7BFB24427C1700B8CD4F /* Home */,
+				B8D17F1224580B2F000443CA /* Info */,
 				B88AC0C924445244007460E0 /* Map */,
 				B8118988245690350020428F /* Model */,
 				B88AC0D124445944007460E0 /* Service */,
 				B81189892456904D0020428F /* Utilities */,
+				B8AD52DD244BC201007B3E96 /* JetBrainsMono */,
 			);
 			path = LCZBuddy;
 			sourceTree = "<group>";
@@ -339,6 +382,8 @@
 				B8AD52E7244BC225007B3E96 /* JetBrainsMono-Medium.ttf in Resources */,
 				B8F0517A2434771A007098F5 /* Assets.xcassets in Resources */,
 				B8AD52EC244BC225007B3E96 /* JetBrainsMono-Regular.ttf in Resources */,
+				B8F2E7812456C40600B51A42 /* PinView.xib in Resources */,
+				B8D17F1B24580DCE000443CA /* InfoTableViewCell.xib in Resources */,
 				B8F0517524347717007098F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,19 +438,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				B88AC0D02444554B007460E0 /* AddViewController.swift in Sources */,
+				B8D17F1624580BF5000443CA /* HelpService.swift in Sources */,
 				B8174F33244E67ED0064EC14 /* EmptyPhotoCollectionViewCell.swift in Sources */,
+				B8F2E7892456D89A00B51A42 /* LCZDescription.swift in Sources */,
 				B8AEF1D12442841E00DA5953 /* DataBindable.swift in Sources */,
 				B88AC0D924447513007460E0 /* Double+Extensions.swift in Sources */,
+				B8D17F1A24580DCE000443CA /* InfoTableViewCell.swift in Sources */,
+				B8F2E7872456CE4100B51A42 /* Reusable.swift in Sources */,
 				B8F0517224347717007098F5 /* HomeViewController.swift in Sources */,
 				B85E7BF82442751900B8CD4F /* LCZ.swift in Sources */,
+				B8F2E77D2456C32F00B51A42 /* UIView+Extensions.swift in Sources */,
 				B8F0516E24347717007098F5 /* AppDelegate.swift in Sources */,
+				B8F2E7852456CDE400B51A42 /* NibLoadable.swift in Sources */,
+				B8D17F1424580B5D000443CA /* InfoViewController.swift in Sources */,
 				B88AC0D524446EFA007460E0 /* Date+Extensions.swift in Sources */,
 				B88AC0CD24445318007460E0 /* MapViewController.swift in Sources */,
 				B8AD52DB244AC06A007B3E96 /* PhotoCollectionViewCell.swift in Sources */,
-				B88AC0D7244470A4007460E0 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
 				B88AC0CB244452C0007460E0 /* HomeTableViewCell.swift in Sources */,
 				B8F0517824347717007098F5 /* LCZBuddy.xcdatamodeld in Sources */,
 				B85DC36E245656BC005D3BC7 /* GeoPoint+Extensions.swift in Sources */,
+				B8F2E7832456CD7500B51A42 /* PinView.swift in Sources */,
 				B81902E52448484500FFE5DE /* DetailViewController.swift in Sources */,
 				B88AC0D32444595C007460E0 /* LCZService.swift in Sources */,
 				B8F0517024347717007098F5 /* SceneDelegate.swift in Sources */,

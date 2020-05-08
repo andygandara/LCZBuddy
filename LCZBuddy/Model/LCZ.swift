@@ -17,35 +17,6 @@ public struct LCZ: Codable {
     let location: GeoPoint
     let cityState: String
     let dateTime: Date
-//    let images: [Data]?
-    
-//    init(model: LCZModel) {
-//        id = model.id
-//        lczType = model.lczType ?? .unknown
-//        location = Coordinate(geoPoint: model.location)
-//        cityState = model.cityState ?? ""
-//        dateTime = model.dateTime ?? Date()
-//        images = model.images ?? []
-//    }
-    
-//    init(id: String, lczType: LCZType, location: Coordinate, cityState: String, dateTime: Date, images: [Image]) {
-//        self.id = id
-//        self.lczType = lczType
-//        self.location = location
-//        self.cityState = cityState
-//        self.dateTime = dateTime
-////        self.images = images
-//    }
-    
-//    init(lczType: LCZType) {
-//        self.lczType = lczType
-//        location = CLLocationCoordinate2D(
-//            latitude: Double.random(in: 32...36),
-//            longitude: Double.random(in: -120...(-108)))
-//        cityState = "Tempe, AZ"
-//        dateTime = Date() - TimeInterval(Int.random(in: 0...14))
-//        images = []
-//    }
 }
 
 public enum LCZType: Int, CaseIterable, Codable {
@@ -101,60 +72,13 @@ public enum LCZType: Int, CaseIterable, Codable {
         case .lcz8: return .systemOrange
         case .lcz9: return .systemIndigo
         case .lcz10: return .systemGray
-        case .lczA: return .systemBlue
-        case .lczB: return .systemBlue
-        case .lczC: return .systemBlue
-        case .lczD: return .systemBlue
-        case .lczE: return .systemBlue
-        case .lczF: return .systemBlue
-        case .lczG: return .systemBlue
+        case .lczA: return UIColor(red: 0, green: 0.5569, blue: 0.4745, alpha: 1.0) /* #008e79 */
+        case .lczB: return UIColor(red: 1, green: 0, blue: 0.5137, alpha: 1.0) /* #ff0083 */
+        case .lczC: return UIColor(red: 0.7804, green: 1, blue: 0, alpha: 1.0) /* #c7ff00 */
+        case .lczD: return UIColor(red: 0, green: 0.7882, blue: 0.7216, alpha: 1.0) /* #00c9b8 */
+        case .lczE: return UIColor(red: 0.7098, green: 0.5294, blue: 0, alpha: 1.0) /* #b58700 */
+        case .lczF: return UIColor(red: 0.7686, green: 0, blue: 0.5098, alpha: 1.0) /* #c40082 */
+        case .lczG: return UIColor(red: 0.5765, green: 0, blue: 0, alpha: 1.0) /* #930000 */
         }
-    }
-}
-
-struct Coordinate {
-    let latitude: Double
-    let longitude: Double
-    
-    init(latitude: Double, longitude: Double) {
-        self.latitude = latitude
-        self.longitude = longitude
-    }
-    
-    init(geoPoint: GeoPoint?) {
-        latitude = (geoPoint?.latitude ?? 0.0) as Double
-        longitude = (geoPoint?.longitude ?? 0.0) as Double
-    }
-    
-//    init(from decoder: Decoder) throws {
-//        let values = try decoder.container(keyedBy: CodingKeys.self)
-//        geopoint = try values.decode(GeoPoint.self, forKey: .geopoint)
-//        latitude = geopoint?.latitude ?? 0
-//        longitude = geopoint?.longitude ?? 0
-//        // latitude = try values.decode(Double.self, forKey: .latitude)
-//        // longitude = try values.decode(Double.self, forKey: .longitude)
-//    }
-//
-//    func encode(to encoder: Encoder) throws {
-//        var container = encoder.container(keyedBy: CodingKeys.self)
-////        try container.encode(geopoint, forKey: .geopoint)
-//        try container.encode(latitude, forKey: .latitude)
-//        try container.encode(longitude, forKey: .longitude)
-//    }
-
-    func locationCoordinate() -> CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: self.latitude,
-                                      longitude: self.longitude)
-    }
-}
-
-struct Image: Codable {
-    let imageData: Data?
-    
-    init(_ image: UIImage) { self.imageData = image.pngData() }
-
-    func getImage() -> UIImage? {
-        guard let imageData = self.imageData else { return nil }
-        return UIImage(data: imageData)
     }
 }
